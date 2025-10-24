@@ -231,4 +231,6 @@ SELECT * FROM Studenten WHERE Wohnort IS NULL
 
 SELECT Vorname FROM Assistenten ORDER BY Geburtsdatum ASC
 
-SELECT 
+SELECT AVG(NOTE) FROM Studenten_Prüfungen WHERE StudentenSchülerID IN (SELECT StudentenSchülerID FROM Studenten WHERE Matrikelnummer = '13-3704-2')
+
+SELECT * FROM Studenten_Prüfungen
