@@ -224,3 +224,11 @@ SELECT PrüfungenPrüfungsID FROM Studenten_Prüfungen WHERE ProfessorenProfID I
 (SELECT ProfID FROM Professoren WHERE Vorname = 'Jacobus')
 
 SELECT Note FROM Studenten_Prüfungen WHERE Note = '5.5'
+
+SELECT * FROM Studenten WHERE Wohnort LIKE '%Bern%' OR Wohnort LIKE '%Basel%'
+
+SELECT * FROM Studenten WHERE Wohnort IS NULL
+
+SELECT Vorname FROM Assistenten ORDER BY Geburtsdatum ASC
+
+SELECT 
